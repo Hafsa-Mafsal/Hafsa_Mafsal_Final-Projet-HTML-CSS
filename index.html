@@ -9,10 +9,10 @@
   <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
 </head>
 
-<body class="bg-[url(./public/images/bg-home.png)] bg-cover bg-center min-h-screen bg-no-repeat">
+<body>
   <header>
     <!-- mobile -->
-    <div class="bg-transparent navbar bg-base-100">
+    <div class=" navbar bg-base-100 bg-[#fec7be] rounded-br-4xl">
       <div class="navbar-start">
         <div class="dropdown">
           <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -38,82 +38,116 @@
         </div>
       </div>
       <div class="navbar-end flex gap-2">
-        <a class="notif"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill=" #fec7be"
+        <a class="notif"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill=" #f8ad78"
             class=" bi bi-bell-fill" viewBox="0 0 16 16">
             <path
               d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2m.995-14.901a1 1 0 1 0-1.99 0A5 5 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901" />
           </svg></a>
         <a href="./public/pages/support.html"
-          class="bg-[#fec7be] text-white hover:shadow-[0_4px_10px_#623366] px-2 py-2 rounded-full font-semibold transition flex justify-center">Besoin
+          class="bg-[#f8ad78] text-white hover:shadow-[0_4px_10px_#623366] py-2 px-5 rounded-full font-semibold transition flex justify-center">Besoin
           d'aide!</a>
       </div>
   </header>
 
   <main>
-    <section class="flex min-h-[calc(100vh-8rem)] justify-end px-8 pt-16">
-      <div class="max-w-sm">
-        <h1 class="font-extrabold text-xl text-[#623366]">
+    <section
+      class="bg-[url(./public/images/bg-home.png)] bg-cover bg-center min-h-screen bg-no-repeat flex justify-end px-8 pt-16">
+      <div class="flex flex-col pr-5 max-w-sm">
+        <h1 class="font-extrabold text-4xl text-[#623366]">
           BIENVENUE DANS LA COMMUNAUTÉ
-          <span class="block text-center font-extrabold text-3xl text-[#f7a164de]">TOGETHER</span>
+          <span class="block text-center font-extrabold text-4xl text-[#f7a164de]">TOGETHER</span>
         </h1>
-        <p class="font-bold text-sm text-[#623366] mt-4">
+        <p class="font-bold text-lg text-[#623366] mt-4">
           Un espace dédié à la défense des droits des femmes, au partage d'expériences et à la solidarité.
           Ensemble, faisons entendre chaque voix et luttons contre les violences basées sur le genre.
         </p>
         <div class="flex justify-center pt-7">
           <a href="./public/pages/signup.html"
-            class="w-fit rounded-full bg-[#f7a164de] px-12 py-2 font-semibold text-white transition hover:shadow-[0_4px_10px_#623366]">
+            class="w-fit rounded-full bg-[#f7a164de] px-12 py-2 text-lg font-semibold text-white transition hover:shadow-[0_4px_10px_#623366]">
             Join Us
           </a>
         </div>
       </div>
     </section>
 
-    <section class="w-full  flex gap-2 p-3">
-      <div class="flex max-w-3xl flex-col gap-3 bg-[#ef5f92]">
-        <div class="flex items-center gap-3">
-          <span
-            class="rounded-full bg-[#402638] px-3 py-1 text-xs font-bold uppercase tracking-wide text-[#e06467]">Keynote</span>
-          <span class="text-sm font-medium text-[#6f9db9]">Main Stage</span>
-        </div>
 
-        <h2 class="text-xl font-bold text-white">Sed ut perspiciatis unde omnis iste natus error</h2>
-
-        <p class="text-sm leading-6 text-[#6b737e]">
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-        </p>
-
+    <section
+      class="w-full flex flex-wrap justify-center gap-5 pl-7 pt-1 bg-[url(./public/images/kmala-img.png)] bg-cover bg-center bg-no-repeat">
+      <!-- c1 -->
+      <div class="flex w-lg flex-col gap-3 rounded-3xl p-3 bg-[#e7afa9e7]">
+        <p class="text-sm leading-6 text-[#6b737e]">"I was afraid to speak up because of the hate I received online.
+          Today, I choose to use my voice without fear."</p>
         <div class="flex items-center gap-3 ">
-          <img src="./public/images/Haribi-Sarah.webp" alt="Tempor incididunt"
-            class="size-10 rounded-full object-cover" />
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#713B8F" class="bi bi-bluesky" viewBox="0 0 16 16">
+  <path d="M3.468 1.948C5.303 3.325 7.276 6.118 8 7.616c.725-1.498 2.698-4.29 4.532-5.668C13.855.955 16 .186 16 2.632c0 .489-.28 4.105-.444 4.692-.572 2.04-2.653 2.561-4.504 2.246 3.236.551 4.06 2.375 2.281 4.2-3.376 3.464-4.852-.87-5.23-1.98-.07-.204-.103-.3-.103-.218 0-.081-.033.014-.102.218-.379 1.11-1.855 5.444-5.231 1.98-1.778-1.825-.955-3.65 2.28-4.2-1.85.315-3.932-.205-4.503-2.246C.28 6.737 0 3.12 0 2.632 0 .186 2.145.955 3.468 1.948"/>
+</svg>
           <div>
-            <p class="text-sm font-bold text-white">Tempor incididunt ut labore et dolore</p>
-            <p class="text-xs text-[#6b737e]">Consectetur adipiscing elit</p>
+            <p class="text-sm font-bold text-white">Anonyme</p>
           </div>
         </div>
       </div>
       <!-- c2 -->
-      <div class="flex max-w-3xl flex-col gap-3 bg-[#ef5f92]">
+      <div class="flex w-lg flex-col gap-3 rounded-3xl p-3 bg-[#e7afa9e7]">
+        <p class="text-sm leading-6 text-[#6b737e]">"I have faced discrimination simply because I am a woman. I believe
+          every woman deserves equal opportunities and respect."</p>
         <div class="flex items-center gap-3">
-          <span
-            class="rounded-full bg-[#402638] px-3 py-1 text-xs font-bold uppercase tracking-wide text-[#e06467]">Keynote</span>
-          <span class="text-sm font-medium text-[#6f9db9]">Main Stage</span>
-        </div>
-
-        <h2 class="text-xl font-bold text-white">Sed ut perspiciatis unde omnis iste natus error</h2>
-
-        <p class="text-sm leading-6 text-[#6b737e]">
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-        </p>
-
-        <div class="flex items-center gap-3">
-          <img src="./public/images/Haribi-Sarah.webp" alt="Tempor incididunt"
-            class="size-10 rounded-full object-cover" />
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#713B8F" class="bi bi-bluesky" viewBox="0 0 16 16">
+  <path d="M3.468 1.948C5.303 3.325 7.276 6.118 8 7.616c.725-1.498 2.698-4.29 4.532-5.668C13.855.955 16 .186 16 2.632c0 .489-.28 4.105-.444 4.692-.572 2.04-2.653 2.561-4.504 2.246 3.236.551 4.06 2.375 2.281 4.2-3.376 3.464-4.852-.87-5.23-1.98-.07-.204-.103-.3-.103-.218 0-.081-.033.014-.102.218-.379 1.11-1.855 5.444-5.231 1.98-1.778-1.825-.955-3.65 2.28-4.2-1.85.315-3.932-.205-4.503-2.246C.28 6.737 0 3.12 0 2.632 0 .186 2.145.955 3.468 1.948"/>
+</svg>
           <div>
-            <p class="text-sm font-bold text-white">Tempor incididunt ut labore et dolore</p>
-            <p class="text-xs text-[#6b737e]">Consectetur adipiscing elit</p>
+            <p class="text-sm font-bold text-white">Anonyme</p>
+          </div>
+        </div>
+      </div>
+      <!-- c3 -->
+      <div class="flex w-lg flex-col gap-3 rounded-3xl p-3 bg-[#e7afa9e7]">
+        <p class="text-sm leading-6 text-[#6b737e]">"Standing up for human rights is not easy. Sometimes I feel scared,
+          but I know that silence will never bring change."</p>
+        <div class="flex items-center gap-3 ">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#713B8F" class="bi bi-bluesky" viewBox="0 0 16 16">
+  <path d="M3.468 1.948C5.303 3.325 7.276 6.118 8 7.616c.725-1.498 2.698-4.29 4.532-5.668C13.855.955 16 .186 16 2.632c0 .489-.28 4.105-.444 4.692-.572 2.04-2.653 2.561-4.504 2.246 3.236.551 4.06 2.375 2.281 4.2-3.376 3.464-4.852-.87-5.23-1.98-.07-.204-.103-.3-.103-.218 0-.081-.033.014-.102.218-.379 1.11-1.855 5.444-5.231 1.98-1.778-1.825-.955-3.65 2.28-4.2-1.85.315-3.932-.205-4.503-2.246C.28 6.737 0 3.12 0 2.632 0 .186 2.145.955 3.468 1.948"/>
+</svg>
+          <div>
+            <p class="text-sm font-bold text-white">Anonyme</p>
+          </div>
+        </div>
+      </div>
+      <!-- c4 -->
+      <div class="flex w-lg flex-col gap-3 rounded-3xl p-3 bg-[#e7afa9e7]">
+        <p class="text-sm leading-6 text-[#6b737e]">"Every woman deserves to be heard. Our voices are powerful, and
+          together we can create a safer and fairer world."</p>
+        <div class="flex items-center gap-3">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#713B8F" class="bi bi-bluesky" viewBox="0 0 16 16">
+  <path d="M3.468 1.948C5.303 3.325 7.276 6.118 8 7.616c.725-1.498 2.698-4.29 4.532-5.668C13.855.955 16 .186 16 2.632c0 .489-.28 4.105-.444 4.692-.572 2.04-2.653 2.561-4.504 2.246 3.236.551 4.06 2.375 2.281 4.2-3.376 3.464-4.852-.87-5.23-1.98-.07-.204-.103-.3-.103-.218 0-.081-.033.014-.102.218-.379 1.11-1.855 5.444-5.231 1.98-1.778-1.825-.955-3.65 2.28-4.2-1.85.315-3.932-.205-4.503-2.246C.28 6.737 0 3.12 0 2.632 0 .186 2.145.955 3.468 1.948"/>
+</svg>
+          <div>
+            <p class="text-sm font-bold text-white">Anonyme</p>
+          </div>
+        </div>
+      </div>
+      <!-- c5 -->
+      <div class="flex w-lg flex-col gap-3 rounded-3xl p-3 bg-[#e7afa9e7]">
+        <p class="text-sm leading-6 text-[#6b737e]">"Supporting other women gives me strength. We should never stop
+          fighting for our rights, our freedom, and our future."</p>
+        <div class="flex items-center gap-3 ">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#713B8F" class="bi bi-bluesky" viewBox="0 0 16 16">
+  <path d="M3.468 1.948C5.303 3.325 7.276 6.118 8 7.616c.725-1.498 2.698-4.29 4.532-5.668C13.855.955 16 .186 16 2.632c0 .489-.28 4.105-.444 4.692-.572 2.04-2.653 2.561-4.504 2.246 3.236.551 4.06 2.375 2.281 4.2-3.376 3.464-4.852-.87-5.23-1.98-.07-.204-.103-.3-.103-.218 0-.081-.033.014-.102.218-.379 1.11-1.855 5.444-5.231 1.98-1.778-1.825-.955-3.65 2.28-4.2-1.85.315-3.932-.205-4.503-2.246C.28 6.737 0 3.12 0 2.632 0 .186 2.145.955 3.468 1.948"/>
+</svg>
+          <div>
+            <p class="text-sm font-bold text-white">Anonyme</p>
+          </div>
+        </div>
+      </div>
+      <!-- c6 -->
+      <div class="flex w-lg flex-col gap-3 rounded-3xl p-3 bg-[#e7afa9e7]">
+        <p class="text-sm leading-6 text-[#6b737e]">"I stayed silent for a long time because I was afraid of being
+          judged. Now I want other women to know that they are not alone."</p>
+        <div class="flex items-center gap-3">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#713B8F" class="bi bi-bluesky" viewBox="0 0 16 16">
+  <path d="M3.468 1.948C5.303 3.325 7.276 6.118 8 7.616c.725-1.498 2.698-4.29 4.532-5.668C13.855.955 16 .186 16 2.632c0 .489-.28 4.105-.444 4.692-.572 2.04-2.653 2.561-4.504 2.246 3.236.551 4.06 2.375 2.281 4.2-3.376 3.464-4.852-.87-5.23-1.98-.07-.204-.103-.3-.103-.218 0-.081-.033.014-.102.218-.379 1.11-1.855 5.444-5.231 1.98-1.778-1.825-.955-3.65 2.28-4.2-1.85.315-3.932-.205-4.503-2.246C.28 6.737 0 3.12 0 2.632 0 .186 2.145.955 3.468 1.948"/>
+</svg>
+          <div>
+            <p class="text-sm font-bold text-white">Anonyme</p>
           </div>
         </div>
       </div>
