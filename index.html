@@ -11,8 +11,8 @@
 
 <body class="bg-[url(./public/images/bg-home.png)] bg-cover bg-center min-h-screen bg-no-repeat">
     <header>
-        <!-- descktop -->
-        <div class="bg-transparent navbar bg-Fbase-100">
+        <!-- mobile -->
+        <div class="bg-transparent navbar bg-base-100">
             <div class="navbar-start">
                 <div class="dropdown">
                     <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -22,19 +22,18 @@
                                 d="M4 6h16M4 12h8m-8 6h16" />
                         </svg>
                     </div>
-                    <div tabindex="-1"
-                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                    <div class="flex  menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3  p-2 shadow">
                         <a class="font-bold text-sm text-[#623366] hover:text-[#F28C45] transition">16 days</a>
-                        <li><a class="font-bold text-sm text-[#623366] hover:text-[#F28C45] transition">About as</a>
-                        <a class="font-bold text-sm text-[#623366] hover:text-[#F28C45] transition">FeedBack</a>
-                        </div>
+                        <a class="font-bold text-sm text-[#623366] hover:text-[#F28C45] transition">About as</a>
+                        <a class="font-bold  text-sm text-[#623366] hover:text-[#F28C45] transition">FeedBack</a>
+                    </div>
                 </div>
                 <a class=" w-[6rem]"><img src="./public/images/logo.png" alt=""></a>
             </div>
-            <!-- mobile -->
+            <!-- descktop -->
             <div class="navbar-center hidden lg:flex">
-                <div class="menu menu-horizontal px-1">
-                    <a class="font-bold text-sm text-[#623366] hover:text-[#F28C45] transition">16 days</a>
+                <div class="menu space-x-3 menu-horizontal px-1">
+                    <a class="font-bold text-sm  text-[#623366] hover:text-[#F28C45] transition">16 days</a>
                     <a class="font-bold text-sm text-[#623366] hover:text-[#F28C45] transition">About as</a>
                     <a class="font-bold text-sm text-[#623366] hover:text-[#F28C45] transition">FeedBack</a>
                 </div>
@@ -51,6 +50,18 @@
             </div>
     </header>
 
+    <main class="relative sm:w-auto p-2">
+        <div class="absolute right-[2rem] top-[4rem]">
+            <h1 class="font-extrabold text-xl text-[#623366] max-w-sm">BIENVENUE DANS LA COMMUNAUTÉ <span
+                    class="flex font-extrabold text-3xl text-[#f7a164de] justify-center">TOGETHER</span></h1>
+            <p class="font-bold text-sm text-[#623366] mt-4 max-w-sm">Un espace dédié à la défense des droits des
+                femmes, au partage d'expériences et à la solidarité.
+                Ensemble, faisons entendre chaque voix et luttons contre les violences basées sur le genre.</p>
+                <div class="flex gap-2 justify-center pt-7"><a href="./public/pages/signup.html"
+                    class="bg-[#f7a164de] text-white hover:shadow-[0_4px_10px_#623366] py-2 px-13 rounded-full w-fit font-semibold transition flex justify-center ">
+                    Join Us</a></div>
+        </div>
+    </main>
 
 
     <footer>
