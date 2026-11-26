@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link href="../css/output.css" rel="stylesheet">
+</head>
+
+<body class="font-sans min-h-screen relative overflow-hidden bg-[#f6f1fb] flex items-center justify-center p-4">
+
+    <!-- gradient background -->
+    <div class="absolute inset-0 -z-10 bg-linear-to-bl from-violet-400/70 via-orange-300/70 via-fuchsia-300/80 via-pink-200/80 to-white/60" aria-hidden="true">
+
+    </div>
+    <!-- Card -->
+    <main class="w-full max-w-[340px] bg-white rounded-3xl shadow-[0_20px_50px_rgba(90,60,140,0.18)] px-6 pt-9 pb-8">
+
+        <!-- Logo -->
+        <div class="flex justify-center mb-8">
+            <img src="../images/logo.png" alt="Logo" class="h-14 w-auto">
+        </div>
+
+        <h1 class="text-center text-[26px] leading-tight font-bold text-neutral-900 mb-7">
+            Create your<br>account
+        </h1>
+
+        <form class="space-y-4">
+            <!-- nom complet -->
+            <div class="relative rounded-lg border border-[#d9d6e3] bg-white focus-within:border-transparent focus-within:[background:linear-gradient(#fff,#fff)_padding-box,linear-gradient(90deg,#8b5cf6,#f472b6,#fb923c)_border-box]">
+                <label for="nom" class="absolute -top-2 left-2.5 bg-white px-1 text-[11px] text-neutral-500">Nom et Prenom</label>
+                <input type="text" placeholder="Nom Complet" class="w-full bg-transparent rounded-lg px-3 py-3 text-sm text-neutral-900 outline-none">
+            </div>
+            <!-- Email -->
+            <div
+                class="relative rounded-lg border border-[#d9d6e3] bg-white focus-within:border-transparent focus-within:[background:linear-gradient(#fff,#fff)_padding-box,linear-gradient(90deg,#8b5cf6,#f472b6,#fb923c)_border-box]">
+                <label for="email" class="absolute -top-2 left-2.5 bg-white px-1 text-[11px] text-neutral-500">Email</label>
+                <input id="email" type="email" placeholder="Email"
+                    class="w-full bg-transparent rounded-lg px-3 py-3 text-sm text-neutral-900 outline-none">
+            </div>
+
+            <!-- Password -->
+            <div
+                class="relative rounded-lg border border-[#d9d6e3] bg-white focus-within:border-transparent focus-within:[background:linear-gradient(#fff,#fff)_padding-box,linear-gradient(90deg,#8b5cf6,#f472b6,#fb923c)_border-box]">
+                <label for="pw"
+                    class="absolute -top-2 left-2.5 bg-white px-1 text-[11px] text-neutral-500">Mot de passe</label>
+                <input id="pw" type="password" placeholder="new-password"
+                    class="w-full bg-transparent rounded-lg px-3 py-3 pr-11 text-sm text-neutral-900 outline-none tracking-widest">
+                <button type="button" data-toggle="pw" aria-label="Show or hide password"
+                    class="absolute right-3 top-1/2 -translate-y-1/2 text-neutral-700">
+                </button>
+            </div>
+
+            <!-- confirmation password -->
+            <div
+                class="relative rounded-lg border border-[#d9d6e3] bg-white focus-within:border-transparent focus-within:[background:linear-gradient(#fff,#fff)_padding-box,linear-gradient(90deg,#8b5cf6,#f472b6,#fb923c)_border-box]">
+                <label for="pw2" class="absolute -top-2 left-2.5 bg-white px-1 text-[11px] text-neutral-500">
+                    Confirme le mot de passe</label>
+                <input id="pw2" type="password" placeholder="password"
+                    class="w-full bg-transparent rounded-lg px-3 py-3 pr-11 text-sm text-neutral-900 outline-none tracking-widest">
+                <button type="button" data-toggle="pw2" aria-label="Show or hide password"
+                    class="absolute right-3 top-1/2 -translate-y-1/2 text-neutral-700">
+
+                </button>
+            </div>
+
+            <!-- Terms -->
+            <label class="flex items-center gap-2 text-xs text-neutral-600 cursor-pointer">
+                <input type="checkbox" class="w-4 h-4 rounded border-violet-400 text-violet-600 focus:ring-violet-500">
+                J'accepte toutes les terms et les conditions
+            </label>
+
+            <!-- Sign up button -->
+            <a href="./community.html" type="submit" class="flex justify-center items-center h-[2rem] py-3 px-[5rem] rounded-lg text-sm font-medium text-white bg-gradient-to-bl from-violet-600 via-fuchsia-500 to-orange-400 shadow-[0_10px_20px_rgba(139,92,246,0.3)] hover:brightness-110 hover:-translate-y-0.5 transition">
+                Sign up
+            </a>
+        </form>
+
+        <p class="text-center text-sm text-neutral-500 mt-6">
+            tu as déjà un compte?
+            <a href="../pages/login.html" class="font-medium text-violet-600 hover:underline">Login</a>
+        </p>
+    </main>
+
+</body>
+
+</html>
