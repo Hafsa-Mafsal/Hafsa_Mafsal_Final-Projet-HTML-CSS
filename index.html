@@ -2,73 +2,131 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link href="./public/css/output.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link href="./public/css/output.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
 </head>
 
 <body class="bg-[url(./public/images/bg-home.png)] bg-cover bg-center min-h-screen bg-no-repeat">
-    <header>
-        <!-- mobile -->
-        <div class="bg-transparent navbar bg-base-100">
-            <div class="navbar-start">
-                <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                        <svg aria-label="Menu" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
-                            viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h8m-8 6h16" />
-                        </svg>
-                    </div>
-                    <div class="flex  menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3  p-2 shadow">
-                        <a class="font-bold text-sm text-[#623366] hover:text-[#F28C45] transition">16 days</a>
-                        <a class="font-bold text-sm text-[#623366] hover:text-[#F28C45] transition">About as</a>
-                        <a class="font-bold  text-sm text-[#623366] hover:text-[#F28C45] transition">FeedBack</a>
-                    </div>
-                </div>
-                <a class=" w-[6rem]"><img src="./public/images/logo.png" alt=""></a>
-            </div>
-            <!-- descktop -->
-            <div class="navbar-center hidden lg:flex">
-                <div class="menu space-x-3 menu-horizontal px-1">
-                    <a class="font-bold text-sm  text-[#623366] hover:text-[#F28C45] transition">16 days</a>
-                    <a class="font-bold text-sm text-[#623366] hover:text-[#F28C45] transition">About as</a>
-                    <a class="font-bold text-sm text-[#623366] hover:text-[#F28C45] transition">FeedBack</a>
-                </div>
-            </div>
-            <div class="navbar-end flex gap-2">
-                <a class="notif"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill=" #fec7be"
-                        class=" bi bi-bell-fill" viewBox="0 0 16 16">
-                        <path
-                            d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2m.995-14.901a1 1 0 1 0-1.99 0A5 5 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901" />
-                    </svg></a>
-                <a href="./public/pages/support.html"
-                    class="bg-[#fec7be] text-white hover:shadow-[0_4px_10px_#623366] px-2 py-2 rounded-full font-semibold transition flex justify-center">Besoin
-                    d'aide!</a>
-            </div>
-    </header>
-
-    <main class="relative sm:w-auto p-2">
-        <div class="absolute right-[2rem] top-[4rem]">
-            <h1 class="font-extrabold text-xl text-[#623366] max-w-sm">BIENVENUE DANS LA COMMUNAUTÉ <span
-                    class="flex font-extrabold text-3xl text-[#f7a164de] justify-center">TOGETHER</span></h1>
-            <p class="font-bold text-sm text-[#623366] mt-4 max-w-sm">Un espace dédié à la défense des droits des
-                femmes, au partage d'expériences et à la solidarité.
-                Ensemble, faisons entendre chaque voix et luttons contre les violences basées sur le genre.</p>
-                <div class="flex gap-2 justify-center pt-7"><a href="./public/pages/signup.html"
-                    class="bg-[#f7a164de] text-white hover:shadow-[0_4px_10px_#623366] py-2 px-13 rounded-full w-fit font-semibold transition flex justify-center ">
-                    Join Us</a></div>
+  <header>
+    <!-- mobile -->
+    <div class="bg-transparent navbar bg-base-100">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg aria-label="Menu" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </div>
+          <div class="flex  menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3  p-2 shadow">
+            <a class="font-bold text-sm text-[#623366] hover:text-[#F28C45] transition">16 days</a>
+            <a class="font-bold text-sm text-[#623366] hover:text-[#F28C45] transition">About as</a>
+            <a class="font-bold  text-sm text-[#623366] hover:text-[#F28C45] transition">FeedBack</a>
+          </div>
         </div>
-    </main>
+        <a class=" w-[6rem]"><img src="./public/images/logo.png" alt=""></a>
+      </div>
+      <!-- descktop -->
+      <div class="navbar-center hidden lg:flex">
+        <div class="menu space-x-3 menu-horizontal px-1">
+          <a class="font-bold text-sm  text-[#623366] hover:text-[#F28C45] transition">16 days</a>
+          <a class="font-bold text-sm text-[#623366] hover:text-[#F28C45] transition">About as</a>
+          <a class="font-bold text-sm text-[#623366] hover:text-[#F28C45] transition">FeedBack</a>
+        </div>
+      </div>
+      <div class="navbar-end flex gap-2">
+        <a class="notif"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill=" #fec7be"
+            class=" bi bi-bell-fill" viewBox="0 0 16 16">
+            <path
+              d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2m.995-14.901a1 1 0 1 0-1.99 0A5 5 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901" />
+          </svg></a>
+        <a href="./public/pages/support.html"
+          class="bg-[#fec7be] text-white hover:shadow-[0_4px_10px_#623366] px-2 py-2 rounded-full font-semibold transition flex justify-center">Besoin
+          d'aide!</a>
+      </div>
+  </header>
+
+  <main>
+    <section class="flex min-h-[calc(100vh-8rem)] justify-end px-8 pt-16">
+      <div class="max-w-sm">
+        <h1 class="font-extrabold text-xl text-[#623366]">
+          BIENVENUE DANS LA COMMUNAUTÉ
+          <span class="block text-center font-extrabold text-3xl text-[#f7a164de]">TOGETHER</span>
+        </h1>
+        <p class="font-bold text-sm text-[#623366] mt-4">
+          Un espace dédié à la défense des droits des femmes, au partage d'expériences et à la solidarité.
+          Ensemble, faisons entendre chaque voix et luttons contre les violences basées sur le genre.
+        </p>
+        <div class="flex justify-center pt-7">
+          <a href="./public/pages/signup.html"
+            class="w-fit rounded-full bg-[#f7a164de] px-12 py-2 font-semibold text-white transition hover:shadow-[0_4px_10px_#623366]">
+            Join Us
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="w-full  flex gap-2 p-3">
+      <div class="flex max-w-3xl flex-col gap-3 bg-[#ef5f92]">
+        <div class="flex items-center gap-3">
+          <span
+            class="rounded-full bg-[#402638] px-3 py-1 text-xs font-bold uppercase tracking-wide text-[#e06467]">Keynote</span>
+          <span class="text-sm font-medium text-[#6f9db9]">Main Stage</span>
+        </div>
+
+        <h2 class="text-xl font-bold text-white">Sed ut perspiciatis unde omnis iste natus error</h2>
+
+        <p class="text-sm leading-6 text-[#6b737e]">
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        </p>
+
+        <div class="flex items-center gap-3 ">
+          <img src="./public/images/Haribi-Sarah.webp" alt="Tempor incididunt"
+            class="size-10 rounded-full object-cover" />
+          <div>
+            <p class="text-sm font-bold text-white">Tempor incididunt ut labore et dolore</p>
+            <p class="text-xs text-[#6b737e]">Consectetur adipiscing elit</p>
+          </div>
+        </div>
+      </div>
+      <!-- c2 -->
+      <div class="flex max-w-3xl flex-col gap-3 bg-[#ef5f92]">
+        <div class="flex items-center gap-3">
+          <span
+            class="rounded-full bg-[#402638] px-3 py-1 text-xs font-bold uppercase tracking-wide text-[#e06467]">Keynote</span>
+          <span class="text-sm font-medium text-[#6f9db9]">Main Stage</span>
+        </div>
+
+        <h2 class="text-xl font-bold text-white">Sed ut perspiciatis unde omnis iste natus error</h2>
+
+        <p class="text-sm leading-6 text-[#6b737e]">
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        </p>
+
+        <div class="flex items-center gap-3">
+          <img src="./public/images/Haribi-Sarah.webp" alt="Tempor incididunt"
+            class="size-10 rounded-full object-cover" />
+          <div>
+            <p class="text-sm font-bold text-white">Tempor incididunt ut labore et dolore</p>
+            <p class="text-xs text-[#6b737e]">Consectetur adipiscing elit</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
 
 
-    <footer>
+  <footer>
 
-    </footer>
+  </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </body>
 
 </html>
