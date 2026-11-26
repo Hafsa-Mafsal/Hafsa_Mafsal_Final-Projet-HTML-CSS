@@ -1,16 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="./public/css/output.css" rel="stylesheet">
+    <link href="../css/output.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
 
 </head>
-<body>
-    
 
-<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<body class="bg-[#eed3cf]">
+    <header>
+        <!-- mobile -->
+        <div class=" navbar bg-base-100 bg-[#eed3cf]">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg aria-label="Menu" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <div class="flex  menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3  p-2 shadow">
+                        <a class="font-bold text-sm text-[#623366] hover:text-[#F28C45] transition">16 days</a>
+                        <a class="font-bold text-sm text-[#623366] hover:text-[#F28C45] transition">About as</a>
+                        <a class="font-bold  text-sm text-[#623366] hover:text-[#F28C45] transition">FeedBack</a>
+                    </div>
+                </div>
+                <a class=" w-[6rem]"><img src="../images/logo.png" alt=""></a>
+            </div>
+            <!-- descktop -->
+            <div class="navbar-center hidden lg:flex">
+                <div class="menu space-x-3 menu-horizontal px-1">
+                    <a class="font-bold text-sm  text-[#623366] hover:text-[#F28C45] transition">16 days</a>
+                    <a class="font-bold text-sm text-[#623366] hover:text-[#F28C45] transition">About as</a>
+                    <a class="font-bold text-sm text-[#623366] hover:text-[#F28C45] transition">FeedBack</a>
+                </div>
+            </div>
+            <div class="navbar-end flex gap-2">
+                <a class="notif"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill=" #cb3e08"
+                        class=" bi bi-bell-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2m.995-14.901a1 1 0 1 0-1.99 0A5 5 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901" />
+                    </svg></a>
+                <a href="./public/pages/support.html"
+                    class="bg-[#cb3e08] text-white hover:shadow-[0_4px_10px_#623366] py-2 px-5 rounded-full font-semibold transition flex justify-center">Besoin
+                    d'aide!</a>
+            </div>
+    </header>
+    <main class="pb-[9rem]">
+        <section class="bg-[url(../images/bg-community.webp)] bg-cover bg-center h-[84vh] bg-no-repeat flex justify-start px-8 pt-16">
+            <div class="flex flex-col pr-5 max-w-lg">
+                <h1 class="font-extrabold text-4xl text-[#623366]">Besoin d'aide ou d'information sur les violences
+                    faites aux femmes?</h1>
+                <p class="font-bold text-lg text-[#6b737e] mt-4">Ce site a pour objectif de vous informer sur les
+                    violences faites aux femmes, ainsi que sur les
+                    ressources et services d'aide disponibles. Que l'on soit victime, proche,
+                    témoin, auteur ou professionnel, on y trouvera toutes les informations utiles.</p>
+            </div>
+        </section>
+        <div class="pl-3 flex gap-4 translate-y-[-15vh]">
+            <button
+                class="text-white bg-[#623366] hover:shadow-[0_4px_10px_#cb3e08] px-4 py-2 font-semibold rounded-xl">
+                Je suis une victime > </button>
+            <button
+                class="text-white bg-[#623366] hover:shadow-[0_4px_10px_#cb3e08] px-4 py-2 font-semibold rounded-xl">
+                Je suis une proche > </button>
+            <button
+                class="text-white bg-[#623366] hover:shadow-[0_4px_10px_#cb3e08] px-4 py-2 font-semibold rounded-xl">
+                Je suis professionnelle > </button>
+            <button
+                class="text-white bg-[#623366] hover:shadow-[0_4px_10px_#cb3e08] px-4 py-2 font-semibold rounded-xl">
+                J'ai des comportements violents > </button>
+        </div>
+    </main>
+    <footer id="contact" class="bg-[#eed3cf] text-white rounded-t-2xl w-[95vw] m-auto shadow-[0_-4px_10px_#623366]">
+        <div class="max-w-7xl mx-auto px-5 md:px-6 py-10 md:py-12">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10">
+                <div>
+                    <h2 class="text-2xl font-extrabold mb-4">
+                        TOGET<span class="text-orange-500">HER</span>
+                    </h2>
+                    <p class="text-[#623366] text-sm">
+                        Raise Your Voice.
+                        Shape Your Future.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-4 hover:text-orange-500">
+                        Home
+                    </h3>
+                    <p class="text-[#623366] text-sm mb-2">
+                        Our Mission
+                    </p>
+                    <p class="text-[#623366] text-sm">
+                        Latest News
+                    </p>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-4 hover:text-orange-500">
+                        Support
+                    </h3>
+                    <p class="text-[#623366] text-sm mb-2">
+                        Legal Help
+                    </p>
+                    <p class="text-[#623366] text-sm">
+                        Protection
+                    </p>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-4 hover:text-orange-500">
+                        Contact Us
+                    </h3>
+                    <p class="text-[#623366] text-sm mb-2">
+                        Rabat, Morocco
+                    </p>
+                    <p class="text-[#623366] text-sm wrap-break-word">
+                        support@together.org
+                    </p>
+                </div>
+            </div>
+            <div class="border-t border-purple-400 mt-10 pt-6 text-center">
+                <p class="text-sm text-[#623366]">
+                    © 2026 HerRights. All Rights Reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </body>
+
 </html>
